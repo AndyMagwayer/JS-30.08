@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Угадай число</title>
+  <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+  <div class="game-container">
+    <h1>Угадай число</h1>
+    <div class="game-content">
+      <div class="game-message"></div>
+      <input type="number" id="userNumberInput" placeholder="Введите число от 1 до 10">
+      <button id="guessButton">Угадать</button>
+    </div>
+    <div class="hearts-container">
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
