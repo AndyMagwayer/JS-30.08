@@ -22,3 +22,31 @@ JavaScript code:
 - The main `main()` function starts the game when the page loads. It displays a welcome message and asks the user if they want to start the game. Depending on the response, the `startGame()` function initiates the game process or displays a game over message.
 
 Overall, the project is a simple game where the user needs to guess a random number between 1 and 10 using an input field and a "Guess" button. The JavaScript code handles user input, provides hints, and tracks the number of attempts. HTML and CSS are used to create the visual elements of the game.
+
+<br>
+
+<br>
+
+# in the Russian language:
+
+- В файле index.html мы создали базовую структуру HTML документа. Внутри тега `` у нас есть контейнер `.game-container`, который будет содержать всю игру.
+- Внутри контейнера `.game-container` есть `
+` с заголовком "Угадай число".
+- Далее идет контейнер `.game-content`, который содержит поле ввода числа и кнопку "Угадать".
+- Под `.game-content` есть контейнер `.hearts-container`, в котором расположены сердечки, отображающие количество оставшихся попыток.
+
+CSS стили:
+- Мы определили стили для всего проекта в файле styles.css.
+- Задали фоновый цвет для `` и установили выравнивание текста по центру.
+- Контейнер `.game-container` настроен с использованием flexbox, чтобы расположить его по центру страницы.
+- Задали стили для заголовка `
+`, поля ввода числа и кнопки "Угадать".
+- Контейнер `.hearts-container` настроен с использованием flexbox, чтобы сердечки были выровнены по правому краю и имели небольшой отступ.
+
+JavaScript код:
+- Мы определили несколько функций для работы игры.
+- Функция `getRandomNumber()` генерирует случайное число от 1 до 10.
+- Функция `showHint()` выводит подсказку пользователю, если его число не совпадает с загаданным.
+- Функция `startGame()` реализует игровой процесс. Она генерирует случайное число, устанавливает количество попыток (начально 5) и запускает цикл, в котором пользователю предлагается вводить числа. Если число пользователя совпадает с загаданным, игра завершается. Если нет, выводится подсказка и количество попыток уменьшается. Если попытки заканчиваются, игра спрашивает у пользователя, хочет ли он сыграть еще раз.
+- Главная функция `main()` выводит приветственное сообщение и спрашивает пользователя, хочет ли он начать игру. В зависимости от ответа, игра начинается или закрывается.
+- Мы запускаем главную функцию `main()` при загрузке страницы с помощью `
